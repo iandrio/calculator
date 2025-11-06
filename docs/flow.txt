@@ -1,0 +1,10 @@
+index.html → visual structure  
+style.css → design  
+
+script.js → entry point  Its only job: run when the page loads, create the calculator state, and 
+            connect the event system.
+
+events.js → listen to button clicks  
+calculator.js → perform math and state changes
+
+

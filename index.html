@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculator 2070</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+
+
+<body>
+  <main class="calculator" aria-label="Basic calculator">
+    <h1 class="sr-only">Calculator 2070</h1>
+
+    <section aria-label="Display">
+      <input
+        id="display"
+        class="display"
+        type="text"
+        readonly
+        inputmode="decimal"
+        aria-live="polite"
+        autocomplete="off"
+      />
+    </section>
+
+    <section class="buttons" role="group" aria-label="Calculator keys">
+      <!-- Gruppen bleiben semantisch, nehmen aber am Eltern-Grid teil (per CSS: display: contents) -->
+      
+      <div class="buttons-group control" aria-label="Controls">
+        <button type="button" data-action="clear">C</button>
+        <button type="button" data-action="equals">=</button>
+      </div>
+
+      <div class="buttons-group operators" aria-label="Operators">
+        <button type="button" data-op="/">÷</button>
+        <button type="button" data-op="*">×</button>
+        <button type="button" data-op="-">−</button>
+        <button type="button" data-op="+">+</button>
+      </div>
+
+      <div class="buttons-group numbers" aria-label="Numbers">
+        <button type="button" data-num="7">7</button>
+        <button type="button" data-num="8">8</button>
+        <button type="button" data-num="9">9</button>
+
+        <button type="button" data-num="4">4</button>
+        <button type="button" data-num="5">5</button>
+        <button type="button" data-num="6">6</button>
+
+        <button type="button" data-num="1">1</button>
+        <button type="button" data-num="2">2</button>
+        <button type="button" data-num="3">3</button>
+
+        <button type="button" data-dot=".">.</button>
+        <button type="button" data-num="0" class="zero">0</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
