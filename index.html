@@ -14,7 +14,7 @@
 
 <body>
   <main class="calculator" aria-label="Basic calculator">
-    <h1 class="sr-only">Calculator 2ö</h1>
+    <h1 class="sr-only">Calculator Pi</h1>
 
     <section aria-label="Display">
       <input
@@ -30,19 +30,16 @@
 
     <section class="buttons" role="group" aria-label="Calculator keys">
       <!-- Gruppen bleiben semantisch, nehmen aber am Eltern-Grid teil (per CSS: display: contents) -->
-      
+     
+
       <div class="buttons-group control" aria-label="Controls">
         <button type="button" data-action="clear">C</button>
+        <button type="button" data-action="delete" aria-label="Backspace">⌫</button>
+        <button type="button" data-action="prozent">%</button>
         <button type="button" data-action="equals">=</button>
       </div>
 
-      <div class="buttons-group operators" aria-label="Operators">
-        <button type="button" data-op="/">÷</button>
-        <button type="button" data-op="*">×</button>
-        <button type="button" data-op="-">−</button>
-        <button type="button" data-op="+">+</button>
-      </div>
-
+      
       <div class="buttons-group numbers" aria-label="Numbers">
         <button type="button" data-num="7">7</button>
         <button type="button" data-num="8">8</button>
@@ -56,9 +53,20 @@
         <button type="button" data-num="2">2</button>
         <button type="button" data-num="3">3</button>
 
-        <button type="button" data-dot=".">.</button>
+        
         <button type="button" data-num="0" class="zero">0</button>
+        <button type="button" data-dot=".">.</button>
       </div>
+
+       <div class="buttons-group operators" aria-label="Operators">
+        <button type="button" data-op="/">÷</button>
+        <button type="button" data-op="*">×</button>
+        <button type="button" data-op="-">−</button>
+        <button type="button" data-op="+">+</button>
+      </div>
+
+      
+
     </section>
   </main>
 </body>
