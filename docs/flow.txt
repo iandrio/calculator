@@ -1,5 +1,5 @@
-index.html → visual structure  
-style.css → design  
+index.html we have the structure  
+style.css we have the design  
 
 script.js → entry point  Its only job: run when the page loads, create the calculator state, and 
             connect the event system.
